@@ -1,0 +1,19 @@
+{
+  "name": "aesthetic-bot",
+  "version": "0.0.1",
+  "description": "A simple and aesthetic Discord Bot base that uses discord.js.\n\n",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "miramallows",
+  "license": "MPL 2.0",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0"
+  }
+}
