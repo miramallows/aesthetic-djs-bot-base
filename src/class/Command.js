@@ -12,7 +12,7 @@ class Command {
 
         this.name = name
         this.dev_only = dev_only || false
-        this.triggers = triggers || [ name ]
+        this.triggers = [ name, ...triggers ] || [ name ]
 
         this.permissions = permissions || []
         this.bot_permissions = bot_permissions || []
