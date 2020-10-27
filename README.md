@@ -28,7 +28,7 @@ you can refer to existing commands to see what options exist in the command clas
 
 | option | type | example | description |
 | ------ | ---- | ------- | ----------------------------------------------------------------------- |
-| `name` | string | `ping` | the "common name" of the command. |
+| `name` | string | `"ping"` | the "common name" of the command. |
 | `triggers` | array (optional - defaults to none) | `[ "pong", "p" ]` | the aliases of a command. | 
 | `dev_only` | boolean (optional - defaults to false) | `true` | whether the command is dev only; whitelist users by id in `.env`. |
 | `permissions` | array (optional - defaults to none) | `[ "MANAGE_GUILD", "MANAGE_MESSAGES" ]` | a list of permissions the user must have in the guild to run that command. |
