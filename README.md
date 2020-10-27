@@ -21,3 +21,15 @@ once you've set it up the first time, each time afterwards, the steps are the sa
 1. locate the directory
 2. run `node .`
 3. profit.
+
+### adding commands
+this bot is a simple command handler base. this means you'll have to write most functionalities or features which you want your bot to have.
+you can refer to existing commands to see what options exist in the command class. all options are not required except `name` and the function you'd like it to run (if there's no function attached to a command, it'll respond `command.incomplete`.)
+
+| option | type | example | description |
+| ------ | ---- | ------- | ----------------------------------------------------------------------- |
+| `name` | string | `ping` | the "common name" of the command. |
+| `triggers` | array (optional - defaults to none) | `[ "pong", "p" ]` | the aliases of a command. | 
+| `dev_only` | boolean (optional - defaults to false) | `true` | whether the command is dev only; whitelist users by id in `.env`. |
+| `permissions` | array (optional - defaults to none) | `[ "MANAGE_GUILD", "MANAGE_MESSAGES" ]` | a list of permissions the user must have in the guild to run that command. |
+| `bot_permissions` | array (optional - defaults to none) | `[ "KICK_MEMBERS" ]` | a list of permissions the bot must have in the guild to run that command. if not, reminds them to provide such a permission. | 
