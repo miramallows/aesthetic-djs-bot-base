@@ -55,7 +55,7 @@ class Command {
             return 'This command is for developers only.'
         }
 
-        if(command.permissions[0] && command.permissions.some(p => member.hasPermission(p))){
+        if(command.permissions[0] && command.permissions.some(p => !member.hasPermission(p))){
             return true
         }
 
